@@ -33,3 +33,5 @@ git reset --hard HEAD~100
 git reset --hard 5bd44a
 //查看回退版本记录
 git reflog
+//查看工作区和版本库的区别
+git diff HEAD -- readme.txt
