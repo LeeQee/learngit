@@ -41,3 +41,5 @@ git checkout -- filename
 //修改后add到暂存区没有提交到版本库，撤销修改
 git reset HEAd filename
 git checkout -- filename
+//修改后提交到版本库，撤销修改
+git reset --hard HEAD^
