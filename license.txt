@@ -1,0 +1,35 @@
+//初始化安装，设置git的提交用户名
+git config --global user.name "your name"
+gir config --global user.email "email@examle.com" 
+
+//选择一个合适的地方，创建一个空的文件夹
+mkdir learngit
+cd learngit
+pwd//用于显示当前目录
+
+//将该目录变成GIT可以管理的仓库
+git init
+
+//在该目录下新建一个txt文件，填写内容，例如readme.txt
+git add readme.txt
+git commit -m "修改信息备注"
+
+//修改readme.txt,查看修改状态和信息
+git status
+git diff readme.txt
+//提交修改
+git add readme.txt
+//查看状态
+git status
+//提交
+git commit -m "修改备注信息"
+
+//查看历史修改记录或者让提交版本
+git log
+git log --pretty==oneline
+//版本回退
+git reset --hard HEAD^
+git reset --hard HEAD~100
+git reset --hard 5bd44a
+//查看回退版本记录
+git reflog
