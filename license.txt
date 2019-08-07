@@ -35,3 +35,9 @@ git reset --hard 5bd44a
 git reflog
 //查看工作区和版本库的区别
 git diff HEAD -- readme.txt
+
+//修改后没有add到暂存区stage，撤销修改
+git checkout -- filename
+//修改后add到暂存区没有提交到版本库，撤销修改
+git reset HEAd filename
+git checkout -- filename
