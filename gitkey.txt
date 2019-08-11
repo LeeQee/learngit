@@ -1,3 +1,5 @@
+
+//本地仓库关联远程仓库进行推送
 1.登陆github创建一个空仓库，new repository
 2.复制仓库地址
 3.在本地仓库文件夹下打开git
@@ -5,6 +7,12 @@
 5.通过以上命令将本地仓库与远程的仓库进行了关联
 6.将本地仓库的内容推送到原地仓库
 7.git push -u origin master
+
+
+//新建远程仓库，将远程仓库克隆到本地
+1.github新建一个仓库
+2.本地在一个空文件夹中打开git bash
+3.git clone git@github.com:LeeQee/gitskills.git
 
 //第一次提交时候会遇到SSHkey错误，无法提交的情况
 1.删除.ssh文件夹下面的known-hosts
